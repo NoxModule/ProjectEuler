@@ -3,4 +3,12 @@ name = "project_euler"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "001"
+path = "src/bin/001.rs"
+
+[[bin]]
+name = "002"
+path = "src/bin/002.rs"
+
 [dependencies]
