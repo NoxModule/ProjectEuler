@@ -1,2 +1,5 @@
+# Generic ignore rule
+*.ignore*
+
 # Rust binary output directory
 /target
