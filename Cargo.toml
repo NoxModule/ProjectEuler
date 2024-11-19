@@ -30,6 +30,10 @@ name = "005"
 path = "src/bin/005_Smallest_Multiple.rs"
 
 [[bin]]
+name = "006"
+path = "src/bin/006_Sum_Square_Difference.rs"
+
+[[bin]]
 name = "022"
 path = "src/bin/022_Names_Scores.rs"
 
