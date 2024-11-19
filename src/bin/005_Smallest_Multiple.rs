@@ -3,6 +3,7 @@ use clap::Parser;
 /// Solution to Problem 5: [Smallest Multiple](https://projecteuler.net/problem=5)
 ///
 /// Returns smallest number that is evenly divisible from 1 to below given threshold.
+#[cfg(any(not(test), rust_analyzer))]
 #[derive(Parser)]
 struct Args {
     /// Threshold of solution.
@@ -10,6 +11,7 @@ struct Args {
     threshold: u32,
 }
 
+#[cfg(any(not(test), rust_analyzer))]
 fn main() {
     let args = Args::parse();
     println!("Answer: {}", solution(args.threshold));

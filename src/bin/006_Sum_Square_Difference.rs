@@ -3,6 +3,7 @@ use clap::Parser;
 /// Solution to Problem 6: [Sum Square Difference](https://projecteuler.net/problem=6)
 ///
 /// Returns difference between sum of squares and square of sum equal to given threshold.
+#[cfg(any(not(test), rust_analyzer))]
 #[derive(Parser)]
 struct Args {
     /// Threshold of solution.
@@ -10,6 +11,7 @@ struct Args {
     threshold: u32,
 }
 
+#[cfg(any(not(test), rust_analyzer))]
 fn main() {
     let args = Args::parse();
     println!("Answer: {}", solution(args.threshold));
