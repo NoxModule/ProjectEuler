@@ -26,6 +26,10 @@ name = "004"
 path = "src/bin/004_Largest_Palindrome_Product.rs"
 
 [[bin]]
+name = "005"
+path = "src/bin/005_Smallest_Multiple.rs"
+
+[[bin]]
 name = "022"
 path = "src/bin/022_Names_Scores.rs"
 
