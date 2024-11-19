@@ -1,3 +1,8 @@
 {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "files.eol": "\n",
+    "files.exclude": {
+        "target/coverage/[^index.html]*": true,
+        "target/coverage/html/[^index.html]*": true,
+    },
 }

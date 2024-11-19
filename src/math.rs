@@ -5,7 +5,6 @@ pub struct Math;
 impl Math {
     pub fn prime_factors(number: u64) -> HashMap<u64, u64> {
         let mut prime_factors = HashMap::new();
-
         let mut number = number;
 
         fn add_prime_factor(prime_factors: &mut HashMap<u64, u64>, prime_factor: u64) {
@@ -20,7 +19,6 @@ impl Math {
         }
 
         let mut index = 3_u64;
-
         while index <= (number as f64).sqrt() as u64 {
             while number % index == 0 {
                 add_prime_factor(&mut prime_factors, index);
@@ -36,5 +34,27 @@ impl Math {
         }
 
         prime_factors
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn prime_factors_returns_expected_factors() {
+        // arrange
+        let mut expected_factors = HashMap::<u64, u64>::new();
+        expected_factors.insert(2, 1);
+        expected_factors.insert(5, 1);
+        expected_factors.insert(7, 1);
+        expected_factors.insert(13, 1);
+        expected_factors.insert(29, 1);
+
+        // action
+        let actual_factors = Math::prime_factors(26_390);
+
+        // assert
+        assert_eq!(expected_factors, actual_factors);
     }
 }

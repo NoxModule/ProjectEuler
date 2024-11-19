@@ -3,40 +3,44 @@ name = "project_euler"
 version = "0.1.0"
 edition = "2021"
 
+[dependencies]
+clap = { version = "4.5.21", features = ["derive"] }
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(rust_analyzer)'] }
+
 [[bin]]
 name = "001"
-path = "src/bin/001.rs"
+path = "src/bin/001_Multiples_of_3_or_5.rs"
 
 [[bin]]
 name = "002"
-path = "src/bin/002.rs"
+path = "src/bin/002_Even_Fibonacci_Numbers.rs"
 
 [[bin]]
 name = "003"
-path = "src/bin/003.rs"
+path = "src/bin/003_Largest_Prime_Factor.rs"
 
 [[bin]]
 name = "004"
-path = "src/bin/004.rs"
+path = "src/bin/004_Largest_Palindrome_Product.rs"
 
 [[bin]]
 name = "022"
-path = "src/bin/022.rs"
+path = "src/bin/022_Names_Scores.rs"
 
 [[bin]]
 name = "052"
-path = "src/bin/052.rs"
+path = "src/bin/052_Permuted_Multiples.rs"
 
 [[bin]]
 name = "054"
-path = "src/bin/054.rs"
+path = "src/bin/054_Poker_Hands.rs"
 
 [[bin]]
 name = "059"
-path = "src/bin/059.rs"
+path = "src/bin/059_XOR_Decryption.rs"
 
 [[bin]]
 name = "096"
-path = "src/bin/096.rs"
-
-[dependencies]
+path = "src/bin/096_Sudoku.rs"
