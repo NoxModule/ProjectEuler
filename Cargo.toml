@@ -34,6 +34,10 @@ name = "006"
 path = "src/bin/006_Sum_Square_Difference.rs"
 
 [[bin]]
+name = "008"
+path = "src/bin/008_Largest_Product_in_a_Series.rs"
+
+[[bin]]
 name = "022"
 path = "src/bin/022_Names_Scores.rs"
 
