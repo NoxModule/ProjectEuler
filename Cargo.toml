@@ -38,6 +38,10 @@ name = "022"
 path = "src/bin/022_Names_Scores.rs"
 
 [[bin]]
+name = "030"
+path = "src/bin/030_Digit_Fifth_Powers.rs"
+
+[[bin]]
 name = "052"
 path = "src/bin/052_Permuted_Multiples.rs"
 

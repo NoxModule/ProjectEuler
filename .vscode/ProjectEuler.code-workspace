@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"rust-analyzer.cargo.extraEnv": {
+			"CARGO_TARGET_DIR": "target/debug_rust_analyzer",
+			"RUSTFLAGS": "--cfg rust_analyzer",
+		},
+	}
+}
