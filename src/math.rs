@@ -3,6 +3,10 @@ use std::collections::HashMap;
 pub struct Math;
 
 impl Math {
+    pub fn is_prime(number: u64) -> bool {
+        number >= 2 && !(2..=((number as f64).sqrt() as u64)).any(|i| number % i == 0)
+    }
+
     pub fn prime_factors(number: u64) -> HashMap<u64, u64> {
         let mut prime_factors = HashMap::new();
         let mut number = number;
@@ -40,6 +44,22 @@ impl Math {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn is_prime_returns_false_for_composite_numbers() {
+        // assert
+        assert!(vec![4, 6, 8, 9, 10, 12]
+            .iter()
+            .all(|number| !Math::is_prime(*number)));
+    }
+
+    #[test]
+    fn is_prime_returns_true_for_prime_numbers() {
+        // assert
+        assert!(vec![2, 3, 5, 7, 11, 13]
+            .iter()
+            .all(|number| Math::is_prime(*number)));
+    }
 
     #[test]
     fn prime_factors_returns_expected_factors() {
