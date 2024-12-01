@@ -1,0 +1,3 @@
+# Haskell binary output directory
+/target/*
+!/target/.gitkeep
