@@ -2,9 +2,19 @@
 	"folders": [
 		{
 			"path": ".."
+		},
+		{
+			"path": "../Haskell"
+		},
+		{
+			"path": "../Rust"
 		}
 	],
 	"settings": {
+		"files.exclude": {
+			"Haskell": true,
+			"Rust": true
+		},
 		"rust-analyzer.cargo.extraEnv": {
 			"CARGO_TARGET_DIR": "target/debug_rust_analyzer",
 			"RUSTFLAGS": "--cfg rust_analyzer",
