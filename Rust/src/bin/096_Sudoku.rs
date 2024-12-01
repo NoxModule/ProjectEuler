@@ -13,7 +13,7 @@ use project_euler::Sudoku;
 #[derive(Parser)]
 struct Args {
     /// Path of file containing sudoku puzzles.
-    #[arg[short, long, default_value_t = String::from("data/096.txt")]]
+    #[arg[short, long, default_value_t = String::from("../data/096.txt")]]
     path: String,
 }
 
@@ -90,6 +90,6 @@ mod tests {
     #[test]
     fn solution_returns_expected_answer() {
         // assert
-        assert_eq!(3030, solution("data/tests/096.txt"));
+        assert_eq!(3030, solution("../data/tests/096.txt"));
     }
 }

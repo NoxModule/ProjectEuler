@@ -13,7 +13,7 @@ use project_euler::Iterators;
 #[derive(Parser)]
 struct Args {
     /// Path of file containing comma separated XOR-encrypted message ASCII values.
-    #[arg[short, long, default_value_t = String::from("data/059.txt")]]
+    #[arg[short, long, default_value_t = String::from("../data/059.txt")]]
     path: String,
 }
 
@@ -70,6 +70,6 @@ mod tests {
     #[test]
     fn solution_returns_expected_answer() {
         // assert
-        assert_eq!(4_057, solution("data/tests/059.txt"));
+        assert_eq!(4_057, solution("../data/tests/059.txt"));
     }
 }

@@ -13,7 +13,7 @@ use clap::Parser;
 #[derive(Parser)]
 struct Args {
     /// Path of file containing names.
-    #[arg[short, long, default_value_t = String::from("data/022.txt")]]
+    #[arg[short, long, default_value_t = String::from("../data/022.txt")]]
     path: String,
 }
 
@@ -50,6 +50,6 @@ mod tests {
     #[test]
     fn solution_returns_expected_answer() {
         // assert
-        assert_eq!(42, solution("data/tests/022.txt"));
+        assert_eq!(42, solution("../data/tests/022.txt"));
     }
 }

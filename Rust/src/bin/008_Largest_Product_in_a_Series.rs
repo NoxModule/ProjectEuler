@@ -21,7 +21,7 @@ fn main() {
 
 fn solution(window_size: usize) -> u64 {
     let input_digits =
-        fs::read_to_string("data/008.txt").expect("failed to read input file `data/008.txt`");
+        fs::read_to_string("../data/008.txt").expect("failed to read input file `../data/008.txt`");
 
     let input_digits = input_digits
         .chars()

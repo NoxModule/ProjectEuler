@@ -4,7 +4,7 @@ My [Haskell](https://www.haskell.org/)-based solutions to [Project Euler](https:
 ## Running a Solution
 1. Compile the solution using `ghc`. Example below shows how to compile the first solution.
     ```shell
-    ghc -outputdir ./target -o ./target/001.exe 001.hs
+    ghc -outputdir ./target -o ./target/001.exe ./src/001.hs
     ```
 1. Run the solution's binary. Example below shows how to run the first solution.
     ```shell

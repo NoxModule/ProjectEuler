@@ -13,7 +13,7 @@ use project_euler::cards::Hand;
 #[derive(Parser)]
 struct Args {
     /// Path of file containing random poker hands dealt to 2 players.
-    #[arg[short, long, default_value_t = String::from("data/054.txt")]]
+    #[arg[short, long, default_value_t = String::from("../data/054.txt")]]
     path: String,
 }
 
@@ -47,6 +47,6 @@ mod tests {
     #[test]
     fn solution_returns_expected_answer() {
         // assert
-        assert_eq!(4, solution("data/tests/054.txt"));
+        assert_eq!(4, solution("../data/tests/054.txt"));
     }
 }
